@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+   <session-factory>
+      <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+      <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/xworkz</property>
+      <property name = "hibernate.connection.username">root</property>      
+      <property name = "hibernate.connection.password">lakshmi@1997</property>
+      <property name = "hibernate.hbm2ddl.auto">update</property>
+       <property name ="hibernate.show_sql"></property>
+       <property name ="hibernate.format_sql"></property>
+      <mapping class = "com.xworkz.onetomany.dto.VehicleDTO"/>
+      <mapping class = "com.xworkz.onetomany.dto.EngineDTO"/>
+      
+      
+   </session-factory>
+</hibernate-configuration>
